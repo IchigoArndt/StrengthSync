@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
+import 'package:provider/provider.dart';
+
 import 'package:meu_primeiro_app/core/features/login/presentation/styles/login_input_styles.dart';
 import 'package:meu_primeiro_app/core/features/login/presentation/styles/login_snackbar_styles.dart';
 import 'package:meu_primeiro_app/core/features/login/data/services/UserAuthenticationService.dart';
 import 'package:meu_primeiro_app/core/features/login/domain/entities/UserAuthentication.dart';
-import 'package:provider/provider.dart';
-
 
 class LoginPage extends StatefulWidget {
   const LoginPage({super.key});
@@ -38,6 +38,16 @@ class _loginPage extends State<LoginPage> {
         : StyleSnackBar.snackBarError;
 
     ScaffoldMessenger.of(context).showSnackBar(snackbar);
+
+    if (authentication)
+    {
+      //Utilizando o padrão, mas há possibilidade de mudar
+      Navigator.pushNamedAndRemoveUntil(
+        context,
+        '/home', // Nome da tela destino
+            (route) => false, // Remove todas as telas anteriores
+      );
+    }
   }
 
   @override
