@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:meu_primeiro_app/core/features/home/presentation/widget/calendarWidget.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({super.key});
@@ -45,12 +46,8 @@ class _homePage extends State<HomePage> {
         }
       },
       child: Scaffold(
-        appBar: AppBar(title: const Text('Exemplo')),
         body: Center(
-          child: ListTile(
-            leading: const Icon(Icons.account_circle), // Ícone
-            title: Text(nomeUsuario), // Nome do Usuário
-          ),
+          child: CalendarWidget()
         ),
       ),
     );
