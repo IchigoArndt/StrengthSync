@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:meu_primeiro_app/core/features/home/presentation/widget/calendarWidget.dart';
+import 'package:meu_primeiro_app/core/features/home/presentation/widget/calendar/calendar_widget.dart';
+import 'package:meu_primeiro_app/core/features/home/presentation/widget/userCard/userCard_widget.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({super.key});
@@ -19,26 +20,9 @@ class _homePage extends State<HomePage> {
         if (didPop) return; // Se já foi fechado, não faz nada
 
         bool shouldExit = await showDialog(
-          context: context,
-          builder:
-              (context) => AlertDialog(
-                title: Text("Hora de descansar ou de mais uma série? 💪"),
-                content: Text(
-                  "Antes de sair, tem certeza que quer encerrar o treino?",
-                ),
-                actions: [
-                  TextButton(
-                    onPressed: () => Navigator.of(context).pop(false),
-                    // Cancela saída
-                    child: Text("Cancelar"),
-                  ),
-                  TextButton(
-                    onPressed: () => Navigator.of(context).pop(true),
-                    // Confirma saída
-                    child: Text("Sair"),
-                  ),
-                ],
-              ),
+            context: context,
+            builder:
+                (context) => _showingExitDialog()
         );
 
         if (shouldExit ?? false) {
@@ -47,13 +31,36 @@ class _homePage extends State<HomePage> {
       },
       child: Scaffold(
         body: Center(
-          child: Column(
-            children: [
-              CalendarWidget()
-            ],
-          )
+            child: Column(
+              children: [
+                SizedBox(height: 40),
+                UserCardWidget(nomeUsuario: "Teste",),
+                CalendarWidget()
+              ],
+            )
         ),
       ),
+    );
+  }
+
+  AlertDialog _showingExitDialog() {
+    return AlertDialog(
+      title: Text("Hora de descansar ou de mais uma série? 💪"),
+      content: Text(
+        "Antes de sair, tem certeza que quer encerrar o treino?",
+      ),
+      actions: [
+        TextButton(
+          onPressed: () => Navigator.of(context).pop(false),
+          // Cancela saída
+          child: Text("Cancelar"),
+        ),
+        TextButton(
+          onPressed: () => Navigator.of(context).pop(true),
+          // Confirma saída
+          child: Text("Sair"),
+        ),
+      ],
     );
   }
 }

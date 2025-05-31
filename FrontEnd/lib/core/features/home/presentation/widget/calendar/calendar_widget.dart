@@ -38,9 +38,6 @@ class _CalendarWidgetState extends State<CalendarWidget> {
               color: Colors.transparent, // Remove a cor de fundo do dia atual
             ),
           ),
-          /*selectedDayPredicate: (day) {
-            return isSameDay(_selectedDay, day);
-          },*/
           onDaySelected: (selectedDay, focusedDay) {
             setState(() {
               _selectedDay = selectedDay;
@@ -57,6 +54,24 @@ class _CalendarWidgetState extends State<CalendarWidget> {
             return [];
           },
           calendarBuilders: CalendarBuilders(
+            todayBuilder: (context, day, focusedDay)
+            {
+              return Stack(
+                alignment: Alignment.center,
+                children: [
+                  Text(day.day.toString(), style: TextStyle(fontSize: 16)),
+                  if (_trainingStatus.containsKey(day))
+                    Text(
+                      _trainingStatus[day] == "Treino pulado 😢" ? "😢" : "😊",
+                      style: TextStyle(
+                          fontSize: 24.0,
+                          backgroundColor: Colors.transparent,
+                          fontFamily: 'Arial'
+                      ), // Exibe apenas o emoji do treino
+                    ),
+                ],
+              );
+            },
             defaultBuilder: (context, day, focusedDay) {
               return Stack(
                 alignment: Alignment.center,
@@ -64,16 +79,15 @@ class _CalendarWidgetState extends State<CalendarWidget> {
                   Text(day.day.toString(), style: TextStyle(fontSize: 16)),
                   if (_trainingStatus.containsKey(day))
                     Text(
-                      _trainingStatus[day] == "Treino pulado 😢" ? "😢" : "✅",
+                      _trainingStatus[day] == "Treino pulado 😢" ? "😢" : "😊",
                       style: TextStyle(
-                        fontSize: 24.0,
-                        backgroundColor: Colors.transparent,
+                          fontSize: 24.0,
+                          backgroundColor: Colors.transparent,
                           fontFamily: 'Arial'
-                      ), // Exibe apenas o emoji do treino
+                      ),
                     ),
                 ],
               );
-              return Container(); // Não exibe nada caso o dia não tenha status
             },
           ),
         ),
@@ -82,12 +96,12 @@ class _CalendarWidgetState extends State<CalendarWidget> {
           onPressed: () {
             setState(() {
               _calendarFormat =
-                  _calendarFormat == CalendarFormat.month
-                      ? CalendarFormat.week
-                      : CalendarFormat.month;
+              _calendarFormat == CalendarFormat.month
+                  ? CalendarFormat.week
+                  : CalendarFormat.month;
 
               titleVisible =
-                  _calendarFormat == CalendarFormat.week ? false : true;
+              _calendarFormat == CalendarFormat.week ? false : true;
             });
           },
           icon: Icon(
@@ -111,28 +125,28 @@ class _CalendarWidgetState extends State<CalendarWidget> {
       context: context,
       builder:
           (context) => AlertDialog(
-            title: Text("Selecione o status do treino"),
-            actions: [
-              TextButton(
-                onPressed: () {
-                  setState(() {
-                    _trainingStatus[selectedDay] = "Treinado";
-                  });
-                  Navigator.pop(context);
-                },
-                child: Text("Treinado ✅"),
-              ),
-              TextButton(
-                onPressed: () {
-                  setState(() {
-                    _trainingStatus[selectedDay] = "Treino pulado 😢";
-                  });
-                  Navigator.pop(context);
-                },
-                child: Text("Treino pulado ❌"),
-              ),
-            ],
+        title: Text("Selecione o status do treino"),
+        actions: [
+          TextButton(
+            onPressed: () {
+              setState(() {
+                _trainingStatus[selectedDay] = "Treinado";
+              });
+              Navigator.pop(context);
+            },
+            child: Text("Treinado ✅"),
           ),
+          TextButton(
+            onPressed: () {
+              setState(() {
+                _trainingStatus[selectedDay] = "Treino pulado 😢";
+              });
+              Navigator.pop(context);
+            },
+            child: Text("Treino pulado ❌"),
+          ),
+        ],
+      ),
     );
   }
 }
