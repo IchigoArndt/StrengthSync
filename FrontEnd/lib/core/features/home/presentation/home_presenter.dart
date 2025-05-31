@@ -47,7 +47,11 @@ class _homePage extends State<HomePage> {
       },
       child: Scaffold(
         body: Center(
-          child: CalendarWidget()
+          child: Column(
+            children: [
+              CalendarWidget()
+            ],
+          )
         ),
       ),
     );
