@@ -2,12 +2,11 @@ import 'package:flutter/material.dart';
 
 class UserCardWidget extends StatelessWidget {
   final String nomeUsuario;
-  const UserCardWidget({super.key, required this.nomeUsuario});
+  const UserCardWidget({required this.nomeUsuario});
 
   @override
   Widget build(BuildContext context) {
     return Container(
-      width: MediaQuery.of(context).size.width * 0.9,
       padding: const EdgeInsets.symmetric(vertical: 0, horizontal: 25),
       decoration: BoxDecoration(
         color: Colors.white,

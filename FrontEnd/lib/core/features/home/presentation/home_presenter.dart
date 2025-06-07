@@ -20,9 +20,8 @@ class _homePage extends State<HomePage> {
         if (didPop) return; // Se já foi fechado, não faz nada
 
         bool shouldExit = await showDialog(
-            context: context,
-            builder:
-                (context) => _showingExitDialog()
+          context: context,
+          builder: (context) => _showingExitDialog(),
         );
 
         if (shouldExit ?? false) {
@@ -30,14 +29,33 @@ class _homePage extends State<HomePage> {
         }
       },
       child: Scaffold(
-        body: Center(
-            child: Column(
-              children: [
-                SizedBox(height: 40),
-                UserCardWidget(nomeUsuario: "Teste",),
-                CalendarWidget()
-              ],
-            )
+        body: CustomScrollView(
+          slivers: [
+            SliverPadding(
+              padding: EdgeInsets.symmetric(vertical: 40),
+              sliver: SliverList(
+                delegate: SliverChildListDelegate([
+                  Align(
+                    alignment: Alignment.center,
+                    child: SizedBox(
+                      width: MediaQuery.of(context).size.width * 0.9, // Define a largura máxima
+                      child: UserCardWidget(nomeUsuario: "Teste"),
+                    ),
+                  ),
+                  Align(
+                    alignment: Alignment.center,
+                    child: Padding(
+                      padding: EdgeInsets.all(16),
+                      child: SizedBox(
+                          width: MediaQuery.of(context).size.width * 0.9, // Define a largura máxima
+                          child: CalendarWidget(),
+                    )
+                    ),
+                  ),
+                ]),
+              ),
+            ),
+          ],
         ),
       ),
     );

@@ -18,105 +18,118 @@ class _CalendarWidgetState extends State<CalendarWidget> {
 
   @override
   Widget build(BuildContext context) {
-    return Column(
-      children: [
-        SizedBox(height: 50),
-        TableCalendar(
-          locale: 'pt_br',
-          focusedDay: _focusedDay,
-          firstDay: DateTime(2020),
-          lastDay: DateTime(2030),
-          headerVisible: titleVisible,
-          calendarFormat: _calendarFormat,
-          headerStyle: HeaderStyle(
-            titleCentered: true,
-            formatButtonVisible: false,
+    return Container(
+      decoration: BoxDecoration(
+        color: Colors.white,
+        borderRadius: BorderRadius.circular(12),
+        boxShadow: [
+          BoxShadow(
+            color: Colors.black.withOpacity(0.1),
+            blurRadius: 6,
+            offset: const Offset(0, 3),
           ),
-          calendarStyle: CalendarStyle(
-            markersMaxCount: 0,
-            todayDecoration: BoxDecoration(
-              color: Colors.transparent, // Remove a cor de fundo do dia atual
+        ],
+      ),
+      child: Column(
+          children: [
+            SizedBox(height: 15),
+            TableCalendar(
+              locale: 'pt_br',
+              focusedDay: _focusedDay,
+              firstDay: DateTime(2020),
+              lastDay: DateTime(2030),
+              headerVisible: titleVisible,
+              calendarFormat: _calendarFormat,
+              headerStyle: HeaderStyle(
+                titleCentered: true,
+                formatButtonVisible: false,
+              ),
+              calendarStyle: CalendarStyle(
+                markersMaxCount: 0,
+                todayDecoration: BoxDecoration(
+                  color: Colors.transparent, // Remove a cor de fundo do dia atual
+                ),
+              ),
+              onDaySelected: (selectedDay, focusedDay) {
+                setState(() {
+                  _selectedDay = selectedDay;
+                  _focusedDay = focusedDay;
+                });
+                _showTrainingDialog(selectedDay);
+              },
+              eventLoader: (day) {
+                if (_trainingStatus.containsKey(day)) {
+                  return [
+                    _trainingStatus[day]!,
+                  ]; // Retorna os eventos (status do treino)
+                }
+                return [];
+              },
+              calendarBuilders: CalendarBuilders(
+                todayBuilder: (context, day, focusedDay)
+                {
+                  return Stack(
+                    alignment: Alignment.center,
+                    children: [
+                      Text(day.day.toString(), style: TextStyle(fontSize: 16)),
+                      if (_trainingStatus.containsKey(day))
+                        Text(
+                          _trainingStatus[day] == "Treino pulado 😢" ? "😢" : "😊",
+                          style: TextStyle(
+                              fontSize: 24.0,
+                              backgroundColor: Colors.transparent,
+                              fontFamily: 'Arial'
+                          ), // Exibe apenas o emoji do treino
+                        ),
+                    ],
+                  );
+                },
+                defaultBuilder: (context, day, focusedDay) {
+                  return Stack(
+                    alignment: Alignment.center,
+                    children: [
+                      Text(day.day.toString(), style: TextStyle(fontSize: 16)),
+                      if (_trainingStatus.containsKey(day))
+                        Text(
+                          _trainingStatus[day] == "Treino pulado 😢" ? "😢" : "😊",
+                          style: TextStyle(
+                              fontSize: 24.0,
+                              backgroundColor: Colors.transparent,
+                              fontFamily: 'Arial'
+                          ),
+                        ),
+                    ],
+                  );
+                },
+              ),
             ),
-          ),
-          onDaySelected: (selectedDay, focusedDay) {
-            setState(() {
-              _selectedDay = selectedDay;
-              _focusedDay = focusedDay;
-            });
-            _showTrainingDialog(selectedDay);
-          },
-          eventLoader: (day) {
-            if (_trainingStatus.containsKey(day)) {
-              return [
-                _trainingStatus[day]!,
-              ]; // Retorna os eventos (status do treino)
-            }
-            return [];
-          },
-          calendarBuilders: CalendarBuilders(
-            todayBuilder: (context, day, focusedDay)
-            {
-              return Stack(
-                alignment: Alignment.center,
-                children: [
-                  Text(day.day.toString(), style: TextStyle(fontSize: 16)),
-                  if (_trainingStatus.containsKey(day))
-                    Text(
-                      _trainingStatus[day] == "Treino pulado 😢" ? "😢" : "😊",
-                      style: TextStyle(
-                          fontSize: 24.0,
-                          backgroundColor: Colors.transparent,
-                          fontFamily: 'Arial'
-                      ), // Exibe apenas o emoji do treino
-                    ),
-                ],
-              );
-            },
-            defaultBuilder: (context, day, focusedDay) {
-              return Stack(
-                alignment: Alignment.center,
-                children: [
-                  Text(day.day.toString(), style: TextStyle(fontSize: 16)),
-                  if (_trainingStatus.containsKey(day))
-                    Text(
-                      _trainingStatus[day] == "Treino pulado 😢" ? "😢" : "😊",
-                      style: TextStyle(
-                          fontSize: 24.0,
-                          backgroundColor: Colors.transparent,
-                          fontFamily: 'Arial'
-                      ),
-                    ),
-                ],
-              );
-            },
-          ),
-        ),
-        SizedBox(height: 10),
-        TextButton.icon(
-          onPressed: () {
-            setState(() {
-              _calendarFormat =
-              _calendarFormat == CalendarFormat.month
-                  ? CalendarFormat.week
-                  : CalendarFormat.month;
+            SizedBox(height: 10),
+            TextButton.icon(
+              onPressed: () {
+                setState(() {
+                  _calendarFormat =
+                  _calendarFormat == CalendarFormat.month
+                      ? CalendarFormat.week
+                      : CalendarFormat.month;
 
-              titleVisible =
-              _calendarFormat == CalendarFormat.week ? false : true;
-            });
-          },
-          icon: Icon(
-            _calendarFormat == CalendarFormat.month
-                ? Icons.arrow_drop_up
-                : Icons.arrow_drop_down,
-          ),
-          label: Text(
-            _calendarFormat == CalendarFormat.month
-                ? "Retrair Calendário"
-                : "Expandir Calendário",
-            style: TextStyle(fontSize: 16),
-          ),
-        ),
-      ],
+                  titleVisible =
+                  _calendarFormat == CalendarFormat.week ? false : true;
+                });
+              },
+              icon: Icon(
+                _calendarFormat == CalendarFormat.month
+                    ? Icons.arrow_drop_up
+                    : Icons.arrow_drop_down,
+              ),
+              label: Text(
+                _calendarFormat == CalendarFormat.month
+                    ? "Retrair Calendário"
+                    : "Expandir Calendário",
+                style: TextStyle(fontSize: 16),
+              ),
+            ),
+          ],
+      ),
     );
   }
 
