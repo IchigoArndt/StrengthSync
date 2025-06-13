@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:meu_primeiro_app/core/features/home/presentation/widget/DividedBox/dividedBox_widget.dart';
 import 'package:meu_primeiro_app/core/features/home/presentation/widget/calendar/calendar_widget.dart';
 import 'package:meu_primeiro_app/core/features/home/presentation/widget/userCard/userCard_widget.dart';
 
@@ -31,7 +32,7 @@ class _HomePageState extends State<HomePage> {
         body: CustomScrollView(
           slivers: [
             SliverPadding(
-              padding: EdgeInsets.symmetric(vertical: 40),
+              padding: EdgeInsets.symmetric(vertical: 35),
               sliver: SliverToBoxAdapter( // Substitui SliverList por SliverToBoxAdapter
                 child: Container(
                   alignment: Alignment.center,
@@ -51,6 +52,19 @@ class _HomePageState extends State<HomePage> {
                 ),
               ),
             ),
+            SliverToBoxAdapter(
+              child: Container(
+                alignment: Alignment.center,
+                padding: EdgeInsets.all(20),
+                width: MediaQuery.of(context).size.width * 0.9,
+                child: DividedBoxWidget(
+                  key: ValueKey(DateTime.now()),
+                  height: 200,
+                  daysFailed: 0,
+                  daysSucessful: 0,
+                ),
+              ),
+            )
           ],
         ),
       ),

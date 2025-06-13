@@ -5,10 +5,10 @@ class CalendarWidget extends StatefulWidget {
   const CalendarWidget({super.key});
 
   @override
-  _CalendarWidgetState createState() => _CalendarWidgetState();
+  CalendarWidgetState createState() => CalendarWidgetState();
 }
 
-class _CalendarWidgetState extends State<CalendarWidget> {
+class CalendarWidgetState extends State<CalendarWidget> {
   DateTime _focusedDay = DateTime.now();
   DateTime? _selectedDay;
   CalendarFormat _calendarFormat = CalendarFormat.week;
@@ -143,7 +143,8 @@ class _CalendarWidgetState extends State<CalendarWidget> {
           TextButton(
             onPressed: () {
               setState(() {
-                _trainingStatus[selectedDay] = "Treinado";
+                _trainingStatus[selectedDay] = "Treinado 😊";
+                print("Treino registrado: $_trainingStatus");
               });
               Navigator.pop(context);
             },
@@ -153,6 +154,7 @@ class _CalendarWidgetState extends State<CalendarWidget> {
             onPressed: () {
               setState(() {
                 _trainingStatus[selectedDay] = "Treino pulado 😢";
+                print("Treino registrado: $_trainingStatus");
               });
               Navigator.pop(context);
             },
