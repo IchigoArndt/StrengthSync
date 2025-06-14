@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("StrengthSync.Infra")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+370bbb4d95115edfb616790e951a550cb3f5d42f")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+25b85ae457403b723161bfad715a580b205a9092")]
 [assembly: System.Reflection.AssemblyProductAttribute("StrengthSync.Infra")]
 [assembly: System.Reflection.AssemblyTitleAttribute("StrengthSync.Infra")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

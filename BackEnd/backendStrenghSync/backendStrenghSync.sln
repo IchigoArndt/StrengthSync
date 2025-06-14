@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.14.36121.58 d17.14
+VisualStudioVersion = 17.14.36121.58
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StrenghSync.Api", "StrenghSync.Api.csproj", "{A81FE451-2745-4632-B04E-ABBF2A20A990}"
 EndProject
@@ -22,6 +22,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StrengthSync.Infra", "..\StrengthSync.Infra\StrengthSync.Infra.csproj", "{9869C1EF-9210-42B7-AAE1-4050B8743A0F}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StrengthSync.Infra.Data", "..\StrengthSync.Infra.Data\StrengthSync.Infra.Data.csproj", "{BDB1B0CC-115C-448F-ACE9-2C242816D7E7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StrenghtSync.Infra.SharedKernel", "..\StrenghtSync.Infra.SharedKernel\StrenghtSync.Infra.SharedKernel.csproj", "{DAA305C1-D1C2-4F19-ACDD-304F6C7795E6}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -49,6 +51,10 @@ Global
 		{BDB1B0CC-115C-448F-ACE9-2C242816D7E7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BDB1B0CC-115C-448F-ACE9-2C242816D7E7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BDB1B0CC-115C-448F-ACE9-2C242816D7E7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DAA305C1-D1C2-4F19-ACDD-304F6C7795E6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DAA305C1-D1C2-4F19-ACDD-304F6C7795E6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DAA305C1-D1C2-4F19-ACDD-304F6C7795E6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DAA305C1-D1C2-4F19-ACDD-304F6C7795E6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -59,6 +65,7 @@ Global
 		{DC16B803-1B17-4D40-9601-AA631A6DEE0F} = {318B987B-8A1E-48A2-9EAE-0FA1D04006B9}
 		{9869C1EF-9210-42B7-AAE1-4050B8743A0F} = {6B34AC0D-9B3F-4521-867E-FF88C1035F6D}
 		{BDB1B0CC-115C-448F-ACE9-2C242816D7E7} = {6B34AC0D-9B3F-4521-867E-FF88C1035F6D}
+		{DAA305C1-D1C2-4F19-ACDD-304F6C7795E6} = {6B34AC0D-9B3F-4521-867E-FF88C1035F6D}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {D12ACE54-74C0-4D6D-9C2C-F7AF676F6A3D}

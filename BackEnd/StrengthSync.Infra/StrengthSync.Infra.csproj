@@ -6,4 +6,19 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="14.0.0" />
+    <PackageReference Include="FluentValidation" Version="12.0.0" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="8.0.0" />
+    <PackageReference Include="SimpleInjector" Version="5.5.0" />
+    <PackageReference Include="SimpleInjector.Integration.AspNetCore.Mvc.Core" Version="5.5.0" />
+    <PackageReference Include="SimpleInjector.Integration.ServiceCollection" Version="5.5.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\StrengthSync.Application\StrengthSync.Application.csproj" />
+    <ProjectReference Include="..\StrengthSync.Domain\StrengthSync.Domain.csproj" />
+    <ProjectReference Include="..\StrengthSync.Infra.Data\StrengthSync.Infra.Data.csproj" />
+  </ItemGroup>
+
 </Project>

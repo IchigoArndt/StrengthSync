@@ -3,16 +3,22 @@
   "WorkspaceRootPath": "D:\\Backup outro hdd\\StrengthSync\\BackEnd\\backendStrenghSync\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{BDB1B0CC-115C-448F-ACE9-2C242816D7E7}|..\\StrengthSync.Infra.Data\\StrengthSync.Infra.Data.csproj|d:\\backup outro hdd\\strengthsync\\backend\\strengthsync.infra.data\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A81FE451-2745-4632-B04E-ABBF2A20A990}|StrenghSync.Api.csproj|d:\\backup outro hdd\\strengthsync\\backend\\backendstrenghsync\\base\\apicontrollerbase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A81FE451-2745-4632-B04E-ABBF2A20A990}|StrenghSync.Api.csproj|solutionrelative:base\\apicontrollerbase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9869C1EF-9210-42B7-AAE1-4050B8743A0F}|..\\StrengthSync.Infra\\StrengthSync.Infra.csproj|d:\\backup outro hdd\\strengthsync\\backend\\strengthsync.infra\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A81FE451-2745-4632-B04E-ABBF2A20A990}|StrenghSync.Api.csproj|d:\\backup outro hdd\\strengthsync\\backend\\backendstrenghsync\\controllers\\users\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A81FE451-2745-4632-B04E-ABBF2A20A990}|StrenghSync.Api.csproj|solutionrelative:controllers\\users\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DC16B803-1B17-4D40-9601-AA631A6DEE0F}|..\\StrengthSync.Application\\StrengthSync.Application.csproj|d:\\backup outro hdd\\strengthsync\\backend\\strengthsync.application\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A81FE451-2745-4632-B04E-ABBF2A20A990}|StrenghSync.Api.csproj|d:\\backup outro hdd\\strengthsync\\backend\\backendstrenghsync\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A81FE451-2745-4632-B04E-ABBF2A20A990}|StrenghSync.Api.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1A89C0C7-7E39-46BE-8782-DBFB6F0CC250}|..\\StrengthSync.Domain\\StrengthSync.Domain.csproj|d:\\backup outro hdd\\strengthsync\\backend\\strengthsync.domain\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9869C1EF-9210-42B7-AAE1-4050B8743A0F}|..\\StrengthSync.Infra\\StrengthSync.Infra.csproj|d:\\backup outro hdd\\strengthsync\\backend\\strengthsync.infra\\extensions\\servicecollectionextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9869C1EF-9210-42B7-AAE1-4050B8743A0F}|..\\StrengthSync.Infra\\StrengthSync.Infra.csproj|d:\\backup outro hdd\\strengthsync\\backend\\strengthsync.infra\\extensions\\defaultserviceextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,8 +28,73 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 0,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ApiControllerBase.cs",
+              "DocumentMoniker": "D:\\Backup outro hdd\\StrengthSync\\BackEnd\\backendStrenghSync\\Base\\ApiControllerBase.cs",
+              "RelativeDocumentMoniker": "Base\\ApiControllerBase.cs",
+              "ToolTip": "D:\\Backup outro hdd\\StrengthSync\\BackEnd\\backendStrenghSync\\Base\\ApiControllerBase.cs",
+              "RelativeToolTip": "Base\\ApiControllerBase.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB0AAAAyAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-14T19:48:45.427Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\Backup outro hdd\\StrengthSync\\BackEnd\\backendStrenghSync\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "D:\\Backup outro hdd\\StrengthSync\\BackEnd\\backendStrenghSync\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-14T19:39:26.502Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "DefaultServiceExtensions.cs",
+              "DocumentMoniker": "D:\\Backup outro hdd\\StrengthSync\\BackEnd\\StrengthSync.Infra\\Extensions\\DefaultServiceExtensions.cs",
+              "RelativeDocumentMoniker": "..\\StrengthSync.Infra\\Extensions\\DefaultServiceExtensions.cs",
+              "ToolTip": "D:\\Backup outro hdd\\StrengthSync\\BackEnd\\StrengthSync.Infra\\Extensions\\DefaultServiceExtensions.cs",
+              "RelativeToolTip": "..\\StrengthSync.Infra\\Extensions\\DefaultServiceExtensions.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-14T19:38:26.187Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ServiceCollectionExtensions.cs",
+              "DocumentMoniker": "D:\\Backup outro hdd\\StrengthSync\\BackEnd\\StrengthSync.Infra\\Extensions\\ServiceCollectionExtensions.cs",
+              "RelativeDocumentMoniker": "..\\StrengthSync.Infra\\Extensions\\ServiceCollectionExtensions.cs",
+              "ToolTip": "D:\\Backup outro hdd\\StrengthSync\\BackEnd\\StrengthSync.Infra\\Extensions\\ServiceCollectionExtensions.cs",
+              "RelativeToolTip": "..\\StrengthSync.Infra\\Extensions\\ServiceCollectionExtensions.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAABXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-14T19:11:40.882Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "UserController.cs",
+              "DocumentMoniker": "D:\\Backup outro hdd\\StrengthSync\\BackEnd\\backendStrenghSync\\Controllers\\Users\\UserController.cs",
+              "RelativeDocumentMoniker": "Controllers\\Users\\UserController.cs",
+              "ToolTip": "D:\\Backup outro hdd\\StrengthSync\\BackEnd\\backendStrenghSync\\Controllers\\Users\\UserController.cs",
+              "RelativeToolTip": "Controllers\\Users\\UserController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-14T17:59:46.058Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
@@ -35,58 +106,6 @@
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Class1.cs",
-              "DocumentMoniker": "D:\\Backup outro hdd\\StrengthSync\\BackEnd\\StrengthSync.Infra.Data\\Class1.cs",
-              "RelativeDocumentMoniker": "..\\StrengthSync.Infra.Data\\Class1.cs",
-              "ToolTip": "D:\\Backup outro hdd\\StrengthSync\\BackEnd\\StrengthSync.Infra.Data\\Class1.cs",
-              "RelativeToolTip": "..\\StrengthSync.Infra.Data\\Class1.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-13T21:42:48.962Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Class1.cs",
-              "DocumentMoniker": "D:\\Backup outro hdd\\StrengthSync\\BackEnd\\StrengthSync.Infra\\Class1.cs",
-              "RelativeDocumentMoniker": "..\\StrengthSync.Infra\\Class1.cs",
-              "ToolTip": "D:\\Backup outro hdd\\StrengthSync\\BackEnd\\StrengthSync.Infra\\Class1.cs",
-              "RelativeToolTip": "..\\StrengthSync.Infra\\Class1.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-13T21:42:27.728Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Class1.cs",
-              "DocumentMoniker": "D:\\Backup outro hdd\\StrengthSync\\BackEnd\\StrengthSync.Application\\Class1.cs",
-              "RelativeDocumentMoniker": "..\\StrengthSync.Application\\Class1.cs",
-              "ToolTip": "D:\\Backup outro hdd\\StrengthSync\\BackEnd\\StrengthSync.Application\\Class1.cs",
-              "RelativeToolTip": "..\\StrengthSync.Application\\Class1.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-13T21:42:07.462Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Class1.cs",
-              "DocumentMoniker": "D:\\Backup outro hdd\\StrengthSync\\BackEnd\\StrengthSync.Domain\\Class1.cs",
-              "RelativeDocumentMoniker": "..\\StrengthSync.Domain\\Class1.cs",
-              "ToolTip": "D:\\Backup outro hdd\\StrengthSync\\BackEnd\\StrengthSync.Domain\\Class1.cs",
-              "RelativeToolTip": "..\\StrengthSync.Domain\\Class1.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-13T21:40:52.628Z",
-              "EditorCaption": ""
             }
           ]
         }

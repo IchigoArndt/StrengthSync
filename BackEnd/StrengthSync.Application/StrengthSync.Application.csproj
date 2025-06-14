@@ -6,4 +6,13 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <PackageReference Include="MediatR" Version="11.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\StrenghtSync.Infra.SharedKernel\StrenghtSync.Infra.SharedKernel.csproj" />
+    <ProjectReference Include="..\StrengthSync.Domain\StrengthSync.Domain.csproj" />
+  </ItemGroup>
+
 </Project>

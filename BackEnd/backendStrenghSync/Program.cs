@@ -1,6 +1,17 @@
+using SimpleInjector;
+using StrengthSync.Infra.Configurations;
+using StrengthSync.Infra.Extensions;
+
 var builder = WebApplication.CreateBuilder(args);
 
-// Add services to the container.
+// Configurações
+EnviromentConfiguration.Configure(builder.Configuration);
+
+// Criação do container
+var container = new Container();
+
+// Registrar serviços padrão
+builder.Services.AddDefaultServices<Program>(container);
 
 builder.Services.AddControllers();
 // Learn more about configuring OpenAPI at https://aka.ms/aspnet/openapi
