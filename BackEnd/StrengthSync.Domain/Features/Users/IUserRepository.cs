@@ -1,11 +1,15 @@
-﻿namespace StrengthSync.Domain.Features.Users
+﻿using StrenghtSync.Infra.SharedKernel;
+
+namespace StrengthSync.Domain.Features.Users
 {
     public interface IUserRepository
     {
-        public User GetUserLogin(string email, string password);
+        public Task<User?> GetUserLoginAsync(string userName);
 
-        public void AddUser(User user);
+        public Task<Result<Exception, long>> AddUser(User user);
 
-        public List<string> GetPermissionsByUserId(long userId);
+        public Task<List<string>> GetPermissionsByUserId(long userId);
+
+        public Task<bool> ExisteUserName(string userName);
     }
 }

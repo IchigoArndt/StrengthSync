@@ -10,4 +10,8 @@
     <Folder Include="Data\" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\StrenghtSync.Infra.SharedKernel\StrenghtSync.Infra.SharedKernel.csproj" />
+  </ItemGroup>
+
 </Project>

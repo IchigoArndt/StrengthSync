@@ -300,9 +300,22 @@
           "lib/net7.0/ZstdSharp.dll": {}
         }
       },
+      "StrenghtSync.Infra.SharedKernel/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v9.0",
+        "compile": {
+          "bin/placeholder/StrenghtSync.Infra.SharedKernel.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/StrenghtSync.Infra.SharedKernel.dll": {}
+        }
+      },
       "StrengthSync.Domain/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v9.0",
+        "dependencies": {
+          "StrenghtSync.Infra.SharedKernel": "1.0.0"
+        },
         "compile": {
           "bin/placeholder/StrengthSync.Domain.dll": {}
         },
@@ -798,6 +811,11 @@
         "zstdsharp.port.nuspec"
       ]
     },
+    "StrenghtSync.Infra.SharedKernel/1.0.0": {
+      "type": "project",
+      "path": "../StrenghtSync.Infra.SharedKernel/StrenghtSync.Infra.SharedKernel.csproj",
+      "msbuildProject": "../StrenghtSync.Infra.SharedKernel/StrenghtSync.Infra.SharedKernel.csproj"
+    },
     "StrengthSync.Domain/1.0.0": {
       "type": "project",
       "path": "../StrengthSync.Domain/StrengthSync.Domain.csproj",
@@ -809,6 +827,7 @@
       "MongoDB.Bson >= 3.4.0",
       "MongoDB.Driver >= 3.4.0",
       "MongoDB.Driver.Core >= 2.30.0",
+      "StrenghtSync.Infra.SharedKernel >= 1.0.0",
       "StrengthSync.Domain >= 1.0.0"
     ]
   },
@@ -844,6 +863,9 @@
         "net9.0": {
           "targetAlias": "net9.0",
           "projectReferences": {
+            "D:\\Backup outro hdd\\StrengthSync\\BackEnd\\StrenghtSync.Infra.SharedKernel\\StrenghtSync.Infra.SharedKernel.csproj": {
+              "projectPath": "D:\\Backup outro hdd\\StrengthSync\\BackEnd\\StrenghtSync.Infra.SharedKernel\\StrenghtSync.Infra.SharedKernel.csproj"
+            },
             "D:\\Backup outro hdd\\StrengthSync\\BackEnd\\StrengthSync.Domain\\StrengthSync.Domain.csproj": {
               "projectPath": "D:\\Backup outro hdd\\StrengthSync\\BackEnd\\StrengthSync.Domain\\StrengthSync.Domain.csproj"
             }

@@ -1,26 +1,28 @@
 {
+  "$schema": "https://json.schemastore.org/launchsettings.json",
   "profiles": {
     "StrenghtSync.Api": {
       "commandName": "Project",
       "launchBrowser": true,
-      "launchUrl": "scalar/nddCargoAdvance",
+      "launchUrl": "Scalar/",
       "environmentVariables": {
         "Connection_Mongo": "mongodb://localhost:27017",
-        "ASPNETCORE_ENVIRONMENT": "Development"
+        "ASPNETCORE_ENVIRONMENT": "Development",
+        "Secret": "o69nEJu3F3Z3Pg6YN2TpNahDkxAmcbOGZzJzcQpsS0A="
       },
-      "applicationUrl": "https://localhost:6666;http://localhost:6665"
+      "applicationUrl": "https://localhost:8666;"
     },
     "Container (Dockerfile)": {
       "commandName": "Docker",
       "launchUrl": "{Scheme}://{ServiceHost}:{ServicePort}",
       "environmentVariables": {
         "Connection_Mongo": "mongodb://localhost:27017",
+        "Secret": "o69nEJu3F3Z3Pg6YN2TpNahDkxAmcbOGZzJzcQpsS0A=",
         "ASPNETCORE_HTTPS_PORTS": "8081",
         "ASPNETCORE_HTTP_PORTS": "8080"
       },
       "publishAllPorts": true,
       "useSSL": true
     }
-  },
-  "$schema": "https://json.schemastore.org/launchsettings.json"
+  }
 }
