@@ -3,6 +3,13 @@
   "WorkspaceRootPath": "D:\\Backup outro hdd\\StrengthSync\\BackEnd\\backendStrenghSync\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{A81FE451-2745-4632-B04E-ABBF2A20A990}|StrenghSync.Api.csproj|d:\\backup outro hdd\\strengthsync\\backend\\backendstrenghsync\\controllers\\users\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A81FE451-2745-4632-B04E-ABBF2A20A990}|StrenghSync.Api.csproj|solutionrelative:controllers\\users\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DC16B803-1B17-4D40-9601-AA631A6DEE0F}|..\\StrengthSync.Application\\StrengthSync.Application.csproj|d:\\backup outro hdd\\strengthsync\\backend\\strengthsync.application\\features\\users\\handlers\\userlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{DC16B803-1B17-4D40-9601-AA631A6DEE0F}|..\\StrengthSync.Application\\StrengthSync.Application.csproj|d:\\backup outro hdd\\strengthsync\\backend\\strengthsync.application\\features\\users\\handlers\\usercreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -12,14 +19,7 @@
       "AbsoluteMoniker": "D:0:0:{1A89C0C7-7E39-46BE-8782-DBFB6F0CC250}|..\\StrengthSync.Domain\\StrengthSync.Domain.csproj|d:\\backup outro hdd\\strengthsync\\backend\\strengthsync.domain\\features\\users\\iuserrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DC16B803-1B17-4D40-9601-AA631A6DEE0F}|..\\StrengthSync.Application\\StrengthSync.Application.csproj|d:\\backup outro hdd\\strengthsync\\backend\\strengthsync.application\\features\\users\\handlers\\userlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{DC16B803-1B17-4D40-9601-AA631A6DEE0F}|..\\StrengthSync.Application\\StrengthSync.Application.csproj|d:\\backup outro hdd\\strengthsync\\backend\\strengthsync.application\\features\\users\\commands\\userlogincommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A81FE451-2745-4632-B04E-ABBF2A20A990}|StrenghSync.Api.csproj|d:\\backup outro hdd\\strengthsync\\backend\\backendstrenghsync\\controllers\\users\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A81FE451-2745-4632-B04E-ABBF2A20A990}|StrenghSync.Api.csproj|solutionrelative:controllers\\users\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{DC16B803-1B17-4D40-9601-AA631A6DEE0F}|..\\StrengthSync.Application\\StrengthSync.Application.csproj|d:\\backup outro hdd\\strengthsync\\backend\\strengthsync.application\\features\\users\\commands\\create\\usercreatecommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
@@ -41,17 +41,17 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 0,
               "Title": "UserController.cs",
               "DocumentMoniker": "D:\\Backup outro hdd\\StrengthSync\\BackEnd\\backendStrenghSync\\Controllers\\Users\\UserController.cs",
               "RelativeDocumentMoniker": "Controllers\\Users\\UserController.cs",
               "ToolTip": "D:\\Backup outro hdd\\StrengthSync\\BackEnd\\backendStrenghSync\\Controllers\\Users\\UserController.cs",
               "RelativeToolTip": "Controllers\\Users\\UserController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAMAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-14T17:59:46.058Z",
               "IsPinned": true,
@@ -73,13 +73,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 1,
               "Title": "UserLogin.cs",
               "DocumentMoniker": "D:\\Backup outro hdd\\StrengthSync\\BackEnd\\StrengthSync.Application\\Features\\Users\\Handlers\\UserLogin.cs",
               "RelativeDocumentMoniker": "..\\StrengthSync.Application\\Features\\Users\\Handlers\\UserLogin.cs",
               "ToolTip": "D:\\Backup outro hdd\\StrengthSync\\BackEnd\\StrengthSync.Application\\Features\\Users\\Handlers\\UserLogin.cs",
               "RelativeToolTip": "..\\StrengthSync.Application\\Features\\Users\\Handlers\\UserLogin.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAABdAAAAAAAAAA==",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAAACsAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-15T03:33:01.503Z",
               "IsPinned": true,
@@ -87,7 +87,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "UserCreate.cs",
               "DocumentMoniker": "D:\\Backup outro hdd\\StrengthSync\\BackEnd\\StrengthSync.Application\\Features\\Users\\Handlers\\UserCreate.cs",
               "RelativeDocumentMoniker": "..\\StrengthSync.Application\\Features\\Users\\Handlers\\UserCreate.cs",
@@ -97,19 +97,6 @@
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-15T03:32:50.899Z",
               "IsPinned": true,
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "UserLoginCommand.cs",
-              "DocumentMoniker": "D:\\Backup outro hdd\\StrengthSync\\BackEnd\\StrengthSync.Application\\Features\\Users\\Commands\\UserLoginCommand.cs",
-              "RelativeDocumentMoniker": "..\\StrengthSync.Application\\Features\\Users\\Commands\\UserLoginCommand.cs",
-              "ToolTip": "D:\\Backup outro hdd\\StrengthSync\\BackEnd\\StrengthSync.Application\\Features\\Users\\Commands\\UserLoginCommand.cs",
-              "RelativeToolTip": "..\\StrengthSync.Application\\Features\\Users\\Commands\\UserLoginCommand.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAeAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-16T22:40:45.106Z",
               "EditorCaption": ""
             },
             {
@@ -126,7 +113,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 5,
+              "Title": "UserLoginCommand.cs",
+              "DocumentMoniker": "D:\\Backup outro hdd\\StrengthSync\\BackEnd\\StrengthSync.Application\\Features\\Users\\Commands\\UserLoginCommand.cs",
+              "RelativeDocumentMoniker": "..\\StrengthSync.Application\\Features\\Users\\Commands\\UserLoginCommand.cs",
+              "ToolTip": "D:\\Backup outro hdd\\StrengthSync\\BackEnd\\StrengthSync.Application\\Features\\Users\\Commands\\UserLoginCommand.cs",
+              "RelativeToolTip": "..\\StrengthSync.Application\\Features\\Users\\Commands\\UserLoginCommand.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-16T22:40:45.106Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "IUserRepository.cs",
               "DocumentMoniker": "D:\\Backup outro hdd\\StrengthSync\\BackEnd\\StrengthSync.Domain\\Features\\Users\\IUserRepository.cs",
               "RelativeDocumentMoniker": "..\\StrengthSync.Domain\\Features\\Users\\IUserRepository.cs",
@@ -139,7 +139,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "UserRepository.cs",
               "DocumentMoniker": "D:\\Backup outro hdd\\StrengthSync\\BackEnd\\StrengthSync.Infra.Data\\Features\\Users\\UserRepository.cs",
               "RelativeDocumentMoniker": "..\\StrengthSync.Infra.Data\\Features\\Users\\UserRepository.cs",
