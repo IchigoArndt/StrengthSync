@@ -10,8 +10,8 @@ void main() {
   runApp(
     MultiProvider(
       providers: [
-        Provider<userAuthenticationService>(
-          create: (_) => userAuthenticationService(),
+        Provider<UserAuthenticationService>(
+          create: (_) => UserAuthenticationService(),
         ),
       ],
       child: const MyApp(),

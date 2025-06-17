@@ -19,12 +19,12 @@ class _loginPage extends State<LoginPage> {
 
   String pathImage = '../../../';
 
-  late userAuthenticationService authenticationService;
+  late UserAuthenticationService authenticationService;
 
   @override
   void didChangeDependencies() {
     super.didChangeDependencies();
-    authenticationService = Provider.of<userAuthenticationService>(context, listen: false);
+    authenticationService = Provider.of<UserAuthenticationService>(context, listen: false);
   }
 
   void authenticateUser() async{
