@@ -15,6 +15,17 @@ class _HomePageState extends State<HomePage> {
   String nomeUsuario = 'Nome do Usuário';
 
   @override
+  void didChangeDependencies() {
+    super.didChangeDependencies();
+    final args = ModalRoute.of(context)?.settings.arguments;
+    if (args != null && args is String) {
+      setState(() {
+        nomeUsuario = args;
+      });
+    }
+  }
+
+  @override
   Widget build(BuildContext context) {
     return PopScope(
       canPop: false,
@@ -38,7 +49,7 @@ class _HomePageState extends State<HomePage> {
                   alignment: Alignment.center,
                   child: SizedBox(
                     width: MediaQuery.of(context).size.width * 0.9,
-                    child: UserCardWidget(nomeUsuario: "Teste", trainingDay: "Superiores"),
+                    child: UserCardWidget(nomeUsuario: nomeUsuario, trainingDay: "Superiores"),
                   ),
                 ),
               ),

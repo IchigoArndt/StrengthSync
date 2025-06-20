@@ -46,7 +46,11 @@ class _loginPage extends State<LoginPage> {
         context,
         '/home', // Nome da tela destino
             (route) => false, // Remove todas as telas anteriores
+            arguments: username
       );
+    } else {
+      showDialog(context: context,
+          builder: (context) =>_showingUserNotRegisteredDialog());
     }
   }
 
@@ -119,4 +123,18 @@ class _loginPage extends State<LoginPage> {
       ),
     );
   }
+
+  AlertDialog _showingUserNotRegisteredDialog() {
+    return AlertDialog(
+      title: Text("Hmmm, parece que esse usuário não está cadastrado"),
+      content: Text("Precisamos de uma ajudinha extra para resolver isso\n Fale com o administrador do sistema."),
+      actions: [
+        TextButton(
+          onPressed: () => Navigator.of(context).pop(false),
+          child: Text("Ok"),
+        )
+      ],
+    );
+  }
+
 }
