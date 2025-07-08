@@ -6,7 +6,7 @@ namespace StrengthSync.Domain.Features.Users
     {
         public Task<User?> GetUserLoginAsync(string userName);
 
-        public Task<Result<Exception, long>> AddUser(User user);
+        public Task<Result<Exception, User>> AddUser(User user);
 
         public Task<List<string>> GetPermissionsByUserId(long userId);
 

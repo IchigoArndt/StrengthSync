@@ -31,14 +31,16 @@ namespace StrengthSync.Application.Features.Users.Handlers
                 Email = request.Email,
                 Password = request.Password,
                 Username = request.UserName,
+                IsGymStudent = request.IsGymStudent,
+                IsInstructor = request.IsInstructor,
             };
 
-           var userResult = await repository.AddUser(newUser);
+            var userResult = await repository.AddUser(newUser);
 
             if (userResult.IsFailure)
                 return new Exception(userResult.Failure.Message);
 
-            return userResult.Success;
+            return userResult.Success.Id;
         }
     }
 }

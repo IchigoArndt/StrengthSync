@@ -4,9 +4,7 @@ using Microsoft.AspNetCore.Mvc;
 using StrenghSync.Api.Base;
 using StrengthSync.Application.Features.Users.Commands;
 using StrengthSync.Application.Features.Users.Commands.Create;
-using StrengthSync.Application.Features.Users.Handlers;
 using System.ComponentModel;
-using System.Threading.Tasks;
 
 namespace StrenghSync.Api.Controllers.Users
 {

@@ -2,7 +2,6 @@
 using Microsoft.IdentityModel.Tokens;
 using StrenghtSync.Infra.SharedKernel;
 using StrengthSync.Application.Features.Users.Commands;
-using StrengthSync.Application.Features.Users.DTOs;
 using StrengthSync.Domain.Exceptions;
 using StrengthSync.Domain.Features.Users;
 using System.IdentityModel.Tokens.Jwt;
@@ -13,9 +12,9 @@ namespace StrengthSync.Application.Features.Users.Handlers
 {
     public class UserLogin
     {
-        public class UserLoginHandler(IUserRepository repository) : IRequestHandler<UserLoginCommand, Result<Exception, UserLoginDto>>
+        public class UserLoginHandler(IUserRepository repository) : IRequestHandler<UserLoginCommand, Result<Exception, string>>
         {
-            public async Task<Result<Exception, UserLoginDto>> Handle(UserLoginCommand request, CancellationToken cancellationToken)
+            public async Task<Result<Exception, string>> Handle(UserLoginCommand request, CancellationToken cancellationToken)
             {
                 var user = await repository.GetUserLoginAsync(request.Username);
 
@@ -27,7 +26,7 @@ namespace StrengthSync.Application.Features.Users.Handlers
                 if (!correctPassword)
                     return new BusinessException(ErrorCodes.Unauthorized, "Senha Incorreta");
 
-                var permissions = await repository.GetPermissionsByUserId(user._id);
+                var permissions = await repository.GetPermissionsByUserId(user.Id);
 
                 if (!permissions.Any())
                     return new BusinessException(ErrorCodes.InvalidObject, "Nenhuma permissão cadastrada");
@@ -37,10 +36,7 @@ namespace StrengthSync.Application.Features.Users.Handlers
                 if (tokenResult.IsFailure)
                     return new Exception(tokenResult.Failure.Message);
 
-                return new UserLoginDto
-                {
-                    Token = tokenResult.Success
-                };
+                return tokenResult.Success;
             }
 
             private async Task<Result<Exception, string>> GenerateToken(string UserName, List<string> Claims)

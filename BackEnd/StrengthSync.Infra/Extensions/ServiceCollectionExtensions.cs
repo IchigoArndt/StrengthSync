@@ -1,8 +1,11 @@
 ﻿using AutoMapper;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
 using MongoDB.Driver;
 using StrengthSync.Application;
 using StrengthSync.Infra.Data;
+using StrengthSync.Infra.Data.Contexts;
+using StrengthSync.Infra.Data.DbMigrator;
 using System.Reflection;
 
 namespace StrengthSync.Infra.Extensions
@@ -18,8 +21,12 @@ namespace StrengthSync.Infra.Extensions
         public static void AddDbServices(this IServiceCollection services)
         {
             var connectionString = Environment.GetEnvironmentVariable("Connection_Mongo");
+            var connectionStringSql = Environment.GetEnvironmentVariable("Connection_Sql");
 
             if (string.IsNullOrEmpty(connectionString))
+                throw new InvalidOperationException("Connection String não definida");
+
+            if (string.IsNullOrEmpty(connectionStringSql))
                 throw new InvalidOperationException("Connection String não definida");
 
             var mongoClient = new MongoClient(connectionString);
@@ -29,6 +36,16 @@ namespace StrengthSync.Infra.Extensions
 
             // Definindo o banco de dados específico
             services.AddScoped(sp => mongoClient.GetDatabase("StrengthSync"));
+
+            services.AddDbContext<StrengthSyncDbContext>(options =>
+            {
+                options.UseSqlServer(connectionStringSql, sqlOptions =>
+                {
+                    sqlOptions.MigrationsHistoryTable("__EFMigrationsHistory", "dbo");
+                });
+            });
+
+            services.AddScoped<DatabaseMigrator>();
 
             AddRepositories(services);
         }

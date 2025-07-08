@@ -1,10 +1,9 @@
 ﻿using MediatR;
 using StrenghtSync.Infra.SharedKernel;
-using StrengthSync.Application.Features.Users.DTOs;
 
 namespace StrengthSync.Application.Features.Users.Commands
 {
-    public class UserLoginCommand : IRequest<Result<Exception, UserLoginDto>>
+    public class UserLoginCommand : IRequest<Result<Exception, string>>
     {
         public string Username { get; set; }
 
