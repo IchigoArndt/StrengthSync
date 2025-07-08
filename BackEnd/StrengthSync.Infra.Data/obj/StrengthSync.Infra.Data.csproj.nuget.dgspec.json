@@ -55,6 +55,18 @@
               "suppressParent": "All",
               "target": "Package",
               "version": "[9.0.6, )"
+            },
+            "Serilog": {
+              "target": "Package",
+              "version": "[4.3.0, )"
+            },
+            "Serilog.AspNetCore": {
+              "target": "Package",
+              "version": "[9.0.0, )"
+            },
+            "Serilog.Sinks.MongoDB": {
+              "target": "Package",
+              "version": "[7.0.0, )"
             }
           },
           "imports": [
@@ -132,6 +144,18 @@
               "suppressParent": "All",
               "target": "Package",
               "version": "[9.0.6, )"
+            },
+            "Serilog": {
+              "target": "Package",
+              "version": "[4.3.0, )"
+            },
+            "Serilog.AspNetCore": {
+              "target": "Package",
+              "version": "[9.0.0, )"
+            },
+            "Serilog.Sinks.MongoDB": {
+              "target": "Package",
+              "version": "[7.0.0, )"
             }
           },
           "imports": [
@@ -247,17 +271,17 @@
               "target": "Package",
               "version": "[9.0.6, )"
             },
-            "MongoDB.Bson": {
+            "Serilog": {
               "target": "Package",
-              "version": "[3.4.0, )"
+              "version": "[4.3.0, )"
             },
-            "MongoDB.Driver": {
+            "Serilog.AspNetCore": {
               "target": "Package",
-              "version": "[3.4.0, )"
+              "version": "[9.0.0, )"
             },
-            "MongoDB.Driver.Core": {
+            "Serilog.Sinks.MongoDB": {
               "target": "Package",
-              "version": "[2.30.0, )"
+              "version": "[7.0.0, )"
             }
           },
           "imports": [

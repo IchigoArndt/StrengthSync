@@ -6,7 +6,7 @@
       "launchBrowser": true,
       "launchUrl": "Scalar/",
       "environmentVariables": {
-        "Connection_Mongo": "mongodb://localhost:27017",
+        "Connection_Mongo": "mongodb://localhost:27017/LogsStrenghSync",
         "Connection_Sql": "Server=localhost;Database=StrengthSync;User Id=sa;Password=123456;TrustServerCertificate=True;Encrypt=False",
         "ASPNETCORE_ENVIRONMENT": "Development",
         "Secret": "o69nEJu3F3Z3Pg6YN2TpNahDkxAmcbOGZzJzcQpsS0A="

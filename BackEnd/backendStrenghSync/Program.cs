@@ -1,54 +1,79 @@
 using Scalar.AspNetCore;
+using Serilog;
 using SimpleInjector;
 using StrengthSync.Infra.Configurations;
 using StrengthSync.Infra.Extensions;
 
-var builder = WebApplication.CreateBuilder(args);
-
-// Configurações
-EnviromentConfiguration.Configure(builder.Configuration);
-
-// Criação do container
-var container = new Container();
-
-// Registrar serviços padrão
-builder.Services.AddDefaultServices<Program>(container);
-
-builder.Services.AddControllers();
-// Learn more about configuring OpenAPI at https://aka.ms/aspnet/openapi
-builder.Services.AddOpenApi();
-
-builder.Services.AddEndpointsApiExplorer();
-
-var MyAllowSpecificOrigins = "_myAllowSpecificOrigins";
-
-builder.Services.AddCors(options =>
+try
 {
-    options.AddPolicy(name: MyAllowSpecificOrigins,
-                      builder =>
-                      {
-                          builder.WithOrigins("*");
-                          builder.AllowAnyMethod();
-                          builder.AllowAnyHeader();
-                      });
-});
+    // Configurações de logs
+    Log.Logger = new LoggerConfiguration()
+                     .WriteTo.MongoDB(Environment.GetEnvironmentVariable("Connection_Mongo"), "Logs")
+                     .WriteTo.Console()
+                     .Enrich.FromLogContext()
+                     .CreateLogger();
 
-var app = builder.Build();
+    Log.Information("Iniciando Api StrenghSync ...");
 
-app.MapOpenApi();
+    var builder = WebApplication.CreateBuilder(args);
 
-app.MapScalarApiReference(opt => opt
-    .WithTitle("StrengthSync")
-    .WithTheme(ScalarTheme.DeepSpace)
-    .WithDefaultHttpClient(ScalarTarget.CSharp, ScalarClient.HttpClient)
-);
+    builder.Host.UseSerilog();
 
-app.UseHttpsRedirection();
+    // Configurações
+    EnviromentConfiguration.Configure(builder.Configuration);
 
-app.UseAuthorization();
+    // Criação do container
+    var container = new Container();
 
-app.MapControllers();
+    // Registrar serviços padrão
+    builder.Services.AddDefaultServices<Program>(container);
 
-app.UseCors(MyAllowSpecificOrigins);
+    builder.Services.AddControllers();
+    // Learn more about configuring OpenAPI at https://aka.ms/aspnet/openapi
+    builder.Services.AddOpenApi();
 
-app.Run();
+    builder.Services.AddEndpointsApiExplorer();
+
+    var MyAllowSpecificOrigins = "_myAllowSpecificOrigins";
+
+    builder.Services.AddCors(options =>
+    {
+        options.AddPolicy(name: MyAllowSpecificOrigins,
+                          builder =>
+                          {
+                              builder.WithOrigins("*");
+                              builder.AllowAnyMethod();
+                              builder.AllowAnyHeader();
+                          });
+    });
+
+    var app = builder.Build();
+
+    app.MapOpenApi();
+
+    app.MapScalarApiReference(opt => opt
+        .WithTitle("StrengthSync")
+        .WithTheme(ScalarTheme.DeepSpace)
+        .WithDefaultHttpClient(ScalarTarget.CSharp, ScalarClient.HttpClient)
+    );
+
+    app.UseHttpsRedirection();
+
+    app.UseAuthorization();
+
+    app.MapControllers();
+
+    app.UseCors(MyAllowSpecificOrigins);
+
+    app.Run();
+}
+catch (Exception ex)
+{
+    Log.Fatal(ex, "Erro fatal ao iniciar a api.");
+}
+finally
+{
+    Log.CloseAndFlush();
+}
+
+

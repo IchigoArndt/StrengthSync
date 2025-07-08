@@ -20,22 +20,10 @@ namespace StrengthSync.Infra.Extensions
         /// <exception cref="Exception">Lançada se a seção AppSettings não estiver configurada.</exception>
         public static void AddDbServices(this IServiceCollection services)
         {
-            var connectionString = Environment.GetEnvironmentVariable("Connection_Mongo");
             var connectionStringSql = Environment.GetEnvironmentVariable("Connection_Sql");
-
-            if (string.IsNullOrEmpty(connectionString))
-                throw new InvalidOperationException("Connection String não definida");
 
             if (string.IsNullOrEmpty(connectionStringSql))
                 throw new InvalidOperationException("Connection String não definida");
-
-            var mongoClient = new MongoClient(connectionString);
-
-            // Registrando o cliente no contêiner de serviços
-            services.AddSingleton<IMongoClient>(mongoClient);
-
-            // Definindo o banco de dados específico
-            services.AddScoped(sp => mongoClient.GetDatabase("StrengthSync"));
 
             services.AddDbContext<StrengthSyncDbContext>(options =>
             {
