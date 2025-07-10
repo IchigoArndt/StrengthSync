@@ -11,5 +11,7 @@ namespace StrengthSync.Domain.Features.Users
         public Task<List<string>> GetPermissionsByUserId(long userId);
 
         public Task<bool> ExisteUserName(string userName);
+
+        public Task<Result<Exception, User>> GetUserById(long id);
     }
 }

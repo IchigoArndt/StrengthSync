@@ -5,7 +5,7 @@ using StrengthSync.Infra.Data.Contexts;
 
 namespace StrengthSync.Infra.Data.Features.Users
 {
-    public class UserRepository (StrengthSyncDbContext context) : IUserRepository
+    public class UserRepository(StrengthSyncDbContext context) : IUserRepository
     {
         public async Task<Result<Exception, User>> AddUser(User user)
         {
@@ -17,7 +17,7 @@ namespace StrengthSync.Infra.Data.Features.Users
 
                 return user;
             }
-            catch (Exception ex) 
+            catch (Exception ex)
             {
                 return ex;
             }
@@ -50,6 +50,19 @@ namespace StrengthSync.Infra.Data.Features.Users
                 permissions.Add("Student");
 
             return permissions;
+        }
+
+        public async Task<Result<Exception,User>> GetUserById(long id)
+        {
+            try
+            {
+                return await context.Users.Where(x => x.Id == id).FirstOrDefaultAsync();
+            }
+            catch (Exception ex)
+            {
+                return ex;
+            }
+            
         }
 
         public async Task<User?> GetUserLoginAsync(string userName)

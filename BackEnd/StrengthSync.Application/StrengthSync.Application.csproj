@@ -25,4 +25,8 @@
     <ProjectReference Include="..\StrengthSync.Domain\StrengthSync.Domain.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Features\CalendarAppointments\Commands\" />
+  </ItemGroup>
+
 </Project>

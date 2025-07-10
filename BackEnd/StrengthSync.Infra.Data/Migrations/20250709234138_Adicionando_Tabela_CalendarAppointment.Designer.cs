@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using StrengthSync.Infra.Data.Contexts;
 
@@ -11,9 +12,11 @@ using StrengthSync.Infra.Data.Contexts;
 namespace StrengthSync.Infra.Data.Migrations
 {
     [DbContext(typeof(StrengthSyncDbContext))]
-    partial class StrengthSyncDbContextModelSnapshot : ModelSnapshot
+    [Migration("20250709234138_Adicionando_Tabela_CalendarAppointment")]
+    partial class Adicionando_Tabela_CalendarAppointment
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder

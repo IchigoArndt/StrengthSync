@@ -1,7 +1,6 @@
 ﻿using AutoMapper;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
-using MongoDB.Driver;
 using StrengthSync.Application;
 using StrengthSync.Infra.Data;
 using StrengthSync.Infra.Data.Contexts;

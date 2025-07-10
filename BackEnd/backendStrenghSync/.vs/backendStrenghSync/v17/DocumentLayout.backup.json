@@ -3,8 +3,19 @@
   "WorkspaceRootPath": "D:\\Backup outro hdd\\StrengthSync\\BackEnd\\backendStrenghSync\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A81FE451-2745-4632-B04E-ABBF2A20A990}|StrenghSync.Api.csproj|d:\\backup outro hdd\\strengthsync\\backend\\backendstrenghsync\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A81FE451-2745-4632-B04E-ABBF2A20A990}|StrenghSync.Api.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{BDB1B0CC-115C-448F-ACE9-2C242816D7E7}|..\\StrengthSync.Infra.Data\\StrengthSync.Infra.Data.csproj|d:\\backup outro hdd\\strengthsync\\backend\\strengthsync.infra.data\\contexts\\strengthsyncdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1A89C0C7-7E39-46BE-8782-DBFB6F0CC250}|..\\StrengthSync.Domain\\StrengthSync.Domain.csproj|d:\\backup outro hdd\\strengthsync\\backend\\strengthsync.domain\\features\\calendarappointments\\calendarappointment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1A89C0C7-7E39-46BE-8782-DBFB6F0CC250}|..\\StrengthSync.Domain\\StrengthSync.Domain.csproj|d:\\backup outro hdd\\strengthsync\\backend\\strengthsync.domain\\features\\users\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1A89C0C7-7E39-46BE-8782-DBFB6F0CC250}|..\\StrengthSync.Domain\\StrengthSync.Domain.csproj|d:\\backup outro hdd\\strengthsync\\backend\\strengthsync.domain\\features\\users\\iuserrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1A89C0C7-7E39-46BE-8782-DBFB6F0CC250}|..\\StrengthSync.Domain\\StrengthSync.Domain.csproj|d:\\backup outro hdd\\strengthsync\\backend\\strengthsync.domain\\features\\calendarappointments\\icalendarappointmentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{DC16B803-1B17-4D40-9601-AA631A6DEE0F}|..\\StrengthSync.Application\\StrengthSync.Application.csproj|d:\\backup outro hdd\\strengthsync\\backend\\strengthsync.application\\features\\users\\handlers\\userlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
@@ -14,6 +25,10 @@
       "RelativeMoniker": "D:0:0:{A81FE451-2745-4632-B04E-ABBF2A20A990}|StrenghSync.Api.csproj|solutionrelative:controllers\\users\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{A81FE451-2745-4632-B04E-ABBF2A20A990}|StrenghSync.Api.csproj|d:\\backup outro hdd\\strengthsync\\backend\\backendstrenghsync\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A81FE451-2745-4632-B04E-ABBF2A20A990}|StrenghSync.Api.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{DC16B803-1B17-4D40-9601-AA631A6DEE0F}|..\\StrengthSync.Application\\StrengthSync.Application.csproj|d:\\backup outro hdd\\strengthsync\\backend\\strengthsync.application\\features\\users\\handlers\\usercreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -21,13 +36,7 @@
       "RelativeMoniker": "D:0:0:{A81FE451-2745-4632-B04E-ABBF2A20A990}|StrenghSync.Api.csproj|solutionrelative:properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BDB1B0CC-115C-448F-ACE9-2C242816D7E7}|..\\StrengthSync.Infra.Data\\StrengthSync.Infra.Data.csproj|d:\\backup outro hdd\\strengthsync\\backend\\strengthsync.infra.data\\contexts\\strengthsyncdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{BDB1B0CC-115C-448F-ACE9-2C242816D7E7}|..\\StrengthSync.Infra.Data\\StrengthSync.Infra.Data.csproj|d:\\backup outro hdd\\strengthsync\\backend\\strengthsync.infra.data\\features\\users\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1A89C0C7-7E39-46BE-8782-DBFB6F0CC250}|..\\StrengthSync.Domain\\StrengthSync.Domain.csproj|d:\\backup outro hdd\\strengthsync\\backend\\strengthsync.domain\\features\\users\\iuserrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -37,31 +46,30 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 6,
               "Title": "UserController.cs",
               "DocumentMoniker": "D:\\Backup outro hdd\\StrengthSync\\BackEnd\\backendStrenghSync\\Controllers\\Users\\UserController.cs",
               "RelativeDocumentMoniker": "Controllers\\Users\\UserController.cs",
               "ToolTip": "D:\\Backup outro hdd\\StrengthSync\\BackEnd\\backendStrenghSync\\Controllers\\Users\\UserController.cs",
               "RelativeToolTip": "Controllers\\Users\\UserController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB4AAAArAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-14T17:59:46.058Z",
-              "IsPinned": true,
-              "EditorCaption": ""
+              "IsPinned": true
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 5,
               "Title": "UserLogin.cs",
               "DocumentMoniker": "D:\\Backup outro hdd\\StrengthSync\\BackEnd\\StrengthSync.Application\\Features\\Users\\Handlers\\UserLogin.cs",
               "RelativeDocumentMoniker": "..\\StrengthSync.Application\\Features\\Users\\Handlers\\UserLogin.cs",
-              "ToolTip": "D:\\Backup outro hdd\\StrengthSync\\BackEnd\\StrengthSync.Application\\Features\\Users\\Handlers\\UserLogin.cs*",
-              "RelativeToolTip": "..\\StrengthSync.Application\\Features\\Users\\Handlers\\UserLogin.cs*",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACUAAABdAAAAAAAAAA==",
+              "ToolTip": "D:\\Backup outro hdd\\StrengthSync\\BackEnd\\StrengthSync.Application\\Features\\Users\\Handlers\\UserLogin.cs",
+              "RelativeToolTip": "..\\StrengthSync.Application\\Features\\Users\\Handlers\\UserLogin.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAuwBoAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-15T03:33:01.503Z",
               "IsPinned": true,
@@ -69,7 +77,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 8,
               "Title": "UserCreate.cs",
               "DocumentMoniker": "D:\\Backup outro hdd\\StrengthSync\\BackEnd\\StrengthSync.Application\\Features\\Users\\Handlers\\UserCreate.cs",
               "RelativeDocumentMoniker": "..\\StrengthSync.Application\\Features\\Users\\Handlers\\UserCreate.cs",
@@ -78,18 +86,17 @@
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-15T03:32:50.899Z",
-              "IsPinned": true,
-              "EditorCaption": ""
+              "IsPinned": true
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 0,
               "Title": "StrengthSyncDbContext.cs",
               "DocumentMoniker": "D:\\Backup outro hdd\\StrengthSync\\BackEnd\\StrengthSync.Infra.Data\\Contexts\\StrengthSyncDbContext.cs",
               "RelativeDocumentMoniker": "..\\StrengthSync.Infra.Data\\Contexts\\StrengthSyncDbContext.cs",
               "ToolTip": "D:\\Backup outro hdd\\StrengthSync\\BackEnd\\StrengthSync.Infra.Data\\Contexts\\StrengthSyncDbContext.cs",
               "RelativeToolTip": "..\\StrengthSync.Infra.Data\\Contexts\\StrengthSyncDbContext.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAABCAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-07-06T02:45:18.314Z",
               "IsPinned": true,
@@ -97,7 +104,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 10,
               "Title": "UserRepository.cs",
               "DocumentMoniker": "D:\\Backup outro hdd\\StrengthSync\\BackEnd\\StrengthSync.Infra.Data\\Features\\Users\\UserRepository.cs",
               "RelativeDocumentMoniker": "..\\StrengthSync.Infra.Data\\Features\\Users\\UserRepository.cs",
@@ -111,7 +118,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 3,
               "Title": "IUserRepository.cs",
               "DocumentMoniker": "D:\\Backup outro hdd\\StrengthSync\\BackEnd\\StrengthSync.Domain\\Features\\Users\\IUserRepository.cs",
               "RelativeDocumentMoniker": "..\\StrengthSync.Domain\\Features\\Users\\IUserRepository.cs",
@@ -125,15 +132,41 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Program.cs",
-              "DocumentMoniker": "D:\\Backup outro hdd\\StrengthSync\\BackEnd\\backendStrenghSync\\Program.cs",
-              "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "D:\\Backup outro hdd\\StrengthSync\\BackEnd\\backendStrenghSync\\Program.cs",
-              "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAlAAAAAAAAAA==",
+              "DocumentIndex": 2,
+              "Title": "User.cs",
+              "DocumentMoniker": "D:\\Backup outro hdd\\StrengthSync\\BackEnd\\StrengthSync.Domain\\Features\\Users\\User.cs",
+              "RelativeDocumentMoniker": "..\\StrengthSync.Domain\\Features\\Users\\User.cs",
+              "ToolTip": "D:\\Backup outro hdd\\StrengthSync\\BackEnd\\StrengthSync.Domain\\Features\\Users\\User.cs",
+              "RelativeToolTip": "..\\StrengthSync.Domain\\Features\\Users\\User.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAYAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-08T23:11:28.285Z",
+              "WhenOpened": "2025-07-09T23:34:54.538Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "CalendarAppointment.cs",
+              "DocumentMoniker": "D:\\Backup outro hdd\\StrengthSync\\BackEnd\\StrengthSync.Domain\\Features\\CalendarAppointments\\CalendarAppointment.cs",
+              "RelativeDocumentMoniker": "..\\StrengthSync.Domain\\Features\\CalendarAppointments\\CalendarAppointment.cs",
+              "ToolTip": "D:\\Backup outro hdd\\StrengthSync\\BackEnd\\StrengthSync.Domain\\Features\\CalendarAppointments\\CalendarAppointment.cs",
+              "RelativeToolTip": "..\\StrengthSync.Domain\\Features\\CalendarAppointments\\CalendarAppointment.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-09T23:27:33.264Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ICalendarAppointmentRepository.cs",
+              "DocumentMoniker": "D:\\Backup outro hdd\\StrengthSync\\BackEnd\\StrengthSync.Domain\\Features\\CalendarAppointments\\ICalendarAppointmentRepository.cs",
+              "RelativeDocumentMoniker": "..\\StrengthSync.Domain\\Features\\CalendarAppointments\\ICalendarAppointmentRepository.cs",
+              "ToolTip": "D:\\Backup outro hdd\\StrengthSync\\BackEnd\\StrengthSync.Domain\\Features\\CalendarAppointments\\ICalendarAppointmentRepository.cs",
+              "RelativeToolTip": "..\\StrengthSync.Domain\\Features\\CalendarAppointments\\ICalendarAppointmentRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-09T23:26:38.823Z",
               "EditorCaption": ""
             },
             {
@@ -150,7 +183,19 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 7,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\Backup outro hdd\\StrengthSync\\BackEnd\\backendStrenghSync\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "D:\\Backup outro hdd\\StrengthSync\\BackEnd\\backendStrenghSync\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-08T23:11:28.285Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
               "Title": "launchSettings.json",
               "DocumentMoniker": "D:\\Backup outro hdd\\StrengthSync\\BackEnd\\backendStrenghSync\\Properties\\launchSettings.json",
               "RelativeDocumentMoniker": "Properties\\launchSettings.json",
@@ -158,8 +203,7 @@
               "RelativeToolTip": "Properties\\launchSettings.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAABGAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-07-08T22:49:56.984Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-08T22:49:56.984Z"
             }
           ]
         }

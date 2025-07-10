@@ -15,7 +15,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("StrenghSync.Api")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7a7daface2d7ba929b9eae886e1285dbed966925")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+baad0aedd3a259d645d27d7c4beffe90f0d78c7d")]
 [assembly: System.Reflection.AssemblyProductAttribute("StrenghSync.Api")]
 [assembly: System.Reflection.AssemblyTitleAttribute("StrenghSync.Api")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
